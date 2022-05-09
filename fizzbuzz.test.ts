@@ -14,4 +14,11 @@ describe('Fizzbuzz', () => {
     const resultExpected = "fizz";
     expect(result).toEqual(resultExpected);
   });
+
+  test('Should return the word fizz when the number is a multiple of 5', () => {
+    const number = 5;
+    const result = fizzbuzz(number);
+    const resultExpected = "buzz";
+    expect(result).toEqual(resultExpected);
+  });
 });
