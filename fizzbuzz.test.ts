@@ -35,4 +35,11 @@ describe('Fizzbuzz', () => {
     const resultExpected = "Please enter a number between 1 and 100";
     expect(result).toEqual(resultExpected);
   });
+
+  test('Should return "Please enter a number between 1 and 100" when the number more greater than 100', () => {
+    const number = 101;
+    const result = fizzbuzz(number);
+    const resultExpected = "Please enter a number between 1 and 100";
+    expect(result).toEqual(resultExpected);
+  });
 });
